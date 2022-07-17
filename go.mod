@@ -1,0 +1,3 @@
+module DESIGN-PATTERN
+
+go 1.18

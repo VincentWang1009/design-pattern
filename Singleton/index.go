@@ -15,7 +15,7 @@ func initInstance() {
 	singleton = &Singleton{}
 }
 
-func getInstance() *Singleton {
+func GetInstance() *Singleton {
 	once.Do(initInstance)
 
 	return singleton
