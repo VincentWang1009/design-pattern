@@ -16,7 +16,6 @@ type Rectangle struct {
 
 func (*Rectangle) DrawShape() string {
 	return "Rectangle drawshape"
-
 }
 
 type Square struct {
