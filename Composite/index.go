@@ -11,7 +11,7 @@ type File struct {
 }
 
 func (f *File) Search(s string) {
-	fmt.Printf("Search for keyword %s file %s", s, f.name)
+	fmt.Printf("Search for keyword %s in file %s\n", s, f.name)
 }
 
 func (f *File) GetName() string {

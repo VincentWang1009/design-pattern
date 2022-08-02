@@ -5,11 +5,13 @@ import (
 )
 
 func TestInit(t *testing.T) {
-	mealIns := &Meal{}
-	mealIns.AddItem(&VegBurger{})
-	// mealIns.AddItem(&VegBurger{})
-	cost := mealIns.GetCost()
-	if cost != 2.3 {
-		t.Fatal("cost is not correct")
-	}
+	file1 := &File{name: "file1"}
+	file2 := &File{name: "file2"}
+
+	file1.Search("aaa")
+
+	folder1 := &Folder{name: "folder1"}
+	folder1.Add(file1)
+	folder1.Add(file2)
+	folder1.Search("bbb")
 }
