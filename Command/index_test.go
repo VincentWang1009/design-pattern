@@ -4,7 +4,6 @@ import "testing"
 
 func TestInit(t *testing.T) {
 	tv := &Tv{}
-
 	onCommand := &OnCommand{
 		device: tv,
 	}
